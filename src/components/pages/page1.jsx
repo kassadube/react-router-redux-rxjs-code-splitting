@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'   
 import YouTube from 'react-youtube'
 import { togglePlay } from 'actions/page1'
@@ -43,4 +43,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, { togglePlay })(Page1)
+export default withRouter(connect(mapStateToProps, { togglePlay })(Page1))

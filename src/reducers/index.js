@@ -1,3 +1,3 @@
 export default {
-  dummyReducer: (a = {}) => a
+  dummyReducer: (a = {}) => a 
 }
